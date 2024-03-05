@@ -1,0 +1,16 @@
+package com.jspiders.multithreading.main;
+
+import com.jspiders.multithreading.resource.Account;
+import com.jspiders.multithreading.thread.Husband;
+import com.jspiders.multithreading.thread.Wife;
+
+public class AccountMain {
+	public static void main(String[] args) {
+	 Account account=new Account();
+	 Wife wife=new Wife(account);
+	 Husband husband=new Husband(account);
+	 wife.start();
+	 husband.start();
+	}
+
+}
