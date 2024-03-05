@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style >
+   #parent
+   {
+   
+    margin:auto;
+    margin-top:50px;
+    display:flex;
+    height:400px;
+    width: 400px;
+    background-color: pink;
+    border:1px solid;
+    
+    border-radius: 10%;
+    
+    }
+    #child
+    {
+    display: flex;
+    margin-left:100px;
+    margin-top:50px;
+    
+    
+    }
+    #btn
+    {
+    height: 40px;
+    width: 100px;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 5%;
+    
+    }
+    #btn:hover {
+	background-color:yellow;
+	color:black;
+}
+#parent:hover {
+	background-color: #87CEEB;
+}
+
+</style>
+</head>
+<body>
+     <div align="center" id="parent">
+    
+      <form action="student" method="post" >
+      <table id="child" >
+      <tr>
+      <td>ID</td>
+      <td><input type="text" name="id"></td>
+      </tr>
+       <tr>
+      <td>Name</td>
+      <td><input type="text" name="name"></td>
+      </tr>
+       <tr>
+      <td>Email</td>
+      <td><input type="text" name="email"></td>
+      </tr>
+      
+       <tr>
+      <td>Age</td>
+      <td><input type="text" name="age"></td>
+      </tr>
+       <tr>
+      <td>Mobile</td>
+      <td><input type="text" name="mobile"></td>
+      </tr>
+      <tr>
+      <td colspan="2">Courses</td>
+      </tr>
+      <tr>
+      <td>SQL</td>
+      <td><input type="checkbox" name="courses" value="SQL"></td>
+      </tr>
+      <tr>
+      <td>Java</td>
+      <td><input type="checkbox" name="courses" value="JAVA"></td>
+      </tr>
+      <tr>
+      <td>Web_Tech</td>
+      <td><input type="checkbox" name="courses" value="webtech"></td>
+      </tr>
+      <tr>
+      <td>j2EE</td>
+      <td><input type="checkbox" name="courses" value="j2EE"></td>
+      </tr>
+      
+      <tr>
+      <td><input type="submit" value="SUBMIT" id="btn"></td>
+      </tr>
+      </table>
+      
+         
+      </form>
+      
+     </div>
+</body>
+</html>
